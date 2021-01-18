@@ -32,7 +32,7 @@ Node.js installed
 * Inspiration
 * etc
 
-![Image description](https://blog.nubank.com.br/wp-content/uploads/2018/11/nubank_oque-mudou-app.png)
+![Image description](https://raw.githubusercontent.com/davipm/deadlybeats/master/screenshot.png?token=AF47FGRWWNXMAS25Q4XOQQ3AAYK5Q)
 
 # Getting Started with the App
 
