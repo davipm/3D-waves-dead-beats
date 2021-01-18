@@ -50,7 +50,7 @@ export default function App() {
         <p>
           find this project on{" "}
           <a
-            href="https://github.com/davipm"
+            href="https://github.com/davipm/deadlybeats"
             target="_blank"
             rel="nofollow noreferrer"
           >

@@ -32,6 +32,8 @@ Node.js installed
 * Inspiration
 * etc
 
+![Image description](https://blog.nubank.com.br/wp-content/uploads/2018/11/nubank_oque-mudou-app.png)
+
 # Getting Started with the App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
