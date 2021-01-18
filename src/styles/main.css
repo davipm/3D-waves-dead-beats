@@ -1,0 +1,148 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, #root, #app {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #000000;
+  overflow: hidden;
+  user-select: none;
+}
+
+.calli {
+  position: absolute;
+  left: -50%;
+  bottom: -40%;
+  width: 200%;
+  height: 200%;
+  object-fit: cover;
+  /*filter: brightness(40%);*/
+  animation: 3s ease-in-out infinite alternate calliAnim;
+}
+
+@keyframes calliAnim {
+  from { transform: rotate(10deg) scale(0.8); }
+  to { transform: rotate(-10deg) scale(1.1);}
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.content__title {
+  margin: 0;
+  font-size: clamp(3rem, 6vw, 8rem);
+  font-weight: 700;
+  line-height: 1.5;
+  font-family: 'Potta One', cursive;
+  color: #FFF;
+}
+
+.footer {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  font-family: 'Potta One', cursive;
+  font-size: 1.2rem;
+  color: #FFF;
+  z-index: 1;
+}
+
+.footer a {
+  color: gray;
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.loading-content {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: black;
+}
+
+#load {
+  position:absolute;
+  width:600px;
+  height:36px;
+  left:50%;
+  top:40%;
+  margin-left:-300px;
+  overflow:visible;
+  user-select:none;
+  cursor:default;
+}
+
+#load div {
+  position:absolute;
+  width:20px;
+  height:36px;
+  opacity:0;
+  font-family:Helvetica, Arial, sans-serif;
+  animation:move 2s linear infinite;
+  transform:rotate(180deg);
+  color:#35C4F0;
+}
+
+#load div:nth-child(2) {
+  animation-delay:0.2s;
+}
+
+#load div:nth-child(3) {
+  animation-delay:0.4s;
+}
+
+#load div:nth-child(4) {
+  animation-delay:0.6s;
+}
+
+#load div:nth-child(5) {
+  animation-delay:0.8s;
+}
+
+#load div:nth-child(6) {
+  animation-delay:1s;
+}
+
+#load div:nth-child(7) {
+  animation-delay:1.2s;
+}
+
+@keyframes move {
+  0% {
+    left:0;
+    opacity:0;
+  }
+  35% {
+    left: 41%;
+    transform:rotate(0deg);
+    opacity:1;
+  }
+  65% {
+    left:59%;
+    transform:rotate(0deg);
+    opacity:1;
+  }
+  100% {
+    left:100%;
+    transform:rotate(-180deg);
+    opacity:0;
+  }
+}
