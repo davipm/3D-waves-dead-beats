@@ -4,13 +4,14 @@ App with 3D wave effects
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+this app is for testing 3D waves effects using React and three.js
 
 ##### articles for better understanding
 
-* [React](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [three](https://maven.apache.org/) - Dependency Management
-* [react-three-fiber](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Poisson disc sampling](https://www.cs.ubc.ca/~rbridson/docs/bridson-siggraph07-poissondisk.pdf) - mathematical distributions
+* [Centroidal Voronoi tessellation](https://en.wikipedia.org/wiki/Centroidal_Voronoi_tessellation) - mathematical distributions
+* [Rounded square waves](https://dsp.stackexchange.com/questions/35211/generating-smoothed-versions-of-square-wave-triangular-etc/56529#56529)
+* [Rounded square waves visualized the equation](https://www.desmos.com/calculator/agt7tb1dky)
 
 ### Prerequisites
 
@@ -18,21 +19,15 @@ Node.js installed
 
 ## Built With
 
-* [React](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [three](https://maven.apache.org/) - Dependency Management
-* [react-three-fiber](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [React](https://reactjs.org/) - The web framework used
+* [three](https://threejs.org/) - JavaScript 3D library
+* [react-three-fiber](https://github.com/pmndrs/react-three-fiber) - React renderer for Three.js
 
 ## Authors
 
 * **Davi Pereira**
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
-![Image description](https://raw.githubusercontent.com/davipm/deadlybeats/master/screenshot.png?token=AF47FGRWWNXMAS25Q4XOQQ3AAYK5Q)
+![Preview](https://github.com/davipm/deadlybeats/blob/master/screenshot.png?raw=true)
 
 # Getting Started with the App
 
@@ -60,7 +55,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified, and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
