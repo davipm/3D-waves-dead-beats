@@ -6,7 +6,7 @@ import { roundedSquareWave } from "../../utils";
 
 export default function Dots() {
   const ref = useRef();
-  const { vec, transform, position, distance } = useMemo(() => {
+  const { vec, transform, position, distances } = useMemo(() => {
     const vec = new THREE.Vector3();
     const transform = new THREE.Matrix4();
 
@@ -26,16 +26,16 @@ export default function Dots() {
 
     const right = new THREE.Vector3(1, 0, 0);
 
-    const distance = position.map((pos) => {
+    const distances = position.map((pos) => {
       return pos.length() + Math.cos(pos.angleTo(right) * 8) * 0.5;
     });
 
-    return { vec, transform, position, distance };
+    return { vec, transform, position, distances };
   }, []);
 
   useFrame(({ clock }) => {
     for (let i = 0; i < 10000; i++) {
-      const dist = distance[i];
+      const dist = distances[i];
       const t = clock.elapsedTime - dist / 25;
       const wave = roundedSquareWave(t, 0.15 + (0.2 * dist) / 72, 0.4, 1 / 3.8);
 
