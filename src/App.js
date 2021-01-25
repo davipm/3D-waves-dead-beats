@@ -39,7 +39,6 @@ export default function App() {
         colorManagement={false}
         resize={{ polyfill: ResizeObserver }}
         style={{ opacity: "0.7" }}
-        id="canvas"
       >
         <color attach="background" args={["black"]} />
         <Effects />
@@ -50,7 +49,7 @@ export default function App() {
         <p>
           find this project on{" "}
           <a
-            href="https://github.com/davipm/deadlybeats"
+            href="https://github.com/davipm/dead-beats"
             target="_blank"
             rel="nofollow noreferrer"
           >
