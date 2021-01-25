@@ -29,10 +29,6 @@ Node.js installed
 
 ![Preview](https://github.com/davipm/deadlybeats/blob/master/screenshot.png?raw=true)
 
-# Getting Started with the App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
