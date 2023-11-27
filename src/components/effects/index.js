@@ -52,7 +52,7 @@ export default function Effects() {
     const rtA = new THREE.WebGLRenderTarget(size.width, size.height);
     const rtB = new THREE.WebGLRenderTarget(size.width, size.height);
     return { rtA, rtB };
-  }, [size]);
+  }, [size.width, size.height]);
 
   useEffect(() => void composer.current.setSize(size.width, size.height), [
     size,
